@@ -1,0 +1,55 @@
+package tj;
+
+public class test {
+	double x;
+	double y;
+	double radius;
+     public test() {  //无参构造方法
+		this(1.0);
+	}
+	public test(double radius) {    //有参构造方法
+		this.radius=radius;
+	}
+	public double getradius() {
+		return radius;
+	}
+	public void setradius(double radius) {
+		this.radius=radius;
+	}
+	public double getarea() {
+		double area=3.14*radius*radius;
+		return area;
+	}
+	public double getperimeter() {
+		double perimeter=3.14*2*radius;
+		return perimeter;
+	}
+    public static void main(String args[]) {
+    	test c=new test();
+      	c.setradius(10);	
+    	System.out.println(c.getradius());
+    	System.out.println(c.getarea());
+    
+    	System.out.println(c.getperimeter());
+    }
+}
+
+
+//构造方法必须与类名同名
+//构造方法不能有返回值
+//在创建对象时用new运算符调用
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
